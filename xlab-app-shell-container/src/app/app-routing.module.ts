@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SkeletonComponent } from './layout/skeleton/skeleton.component';
+import { ReactComponent } from './components/react/react.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: SkeletonComponent
-  }
+    path: 'react',
+    component: ReactComponent
+  },
+  { path: '**', component: NotfoundComponent }
 ];
 
 @NgModule({
