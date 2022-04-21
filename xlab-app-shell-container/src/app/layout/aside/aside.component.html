@@ -1,59 +1,106 @@
 <aside>
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
         <div class="position-sticky pt-3">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                <span data-feather="home"></span>
-                Dashboard
-              </a>
+          <ul>
+            <li>
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>LAB Tech</span>
+                <a class="link-secondary" data-bs-toggle="collapse" href="#collapseMain" aria-expanded="true" aria-controls="collapseMain" aria-label="Principal">
+                  <span data-feather="plus-circle"></span>
+                </a>
+              </h6>
+              <div class="collapse show" id="collapseMain">
+                <ul class="nav flex-column" >
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" routerLink="/" routerLinkActive="active" href="#">
+                      <span data-feather="home"></span>
+                      Dashboard
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/approuteng1" routerLinkActive="active">
+                      <span data-feather="code"></span>
+                      Frontend
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/react1">
+                      <span data-feather="code"></span>
+                      Backend
+                    </a>
+                  </li>
+    
+                </ul>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/approuteng1">
-                <span data-feather="file"></span>
-                Frontend
-              </a>
+            <li>
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>DevOps</span>
+                <a class="link-secondary" data-bs-toggle="collapse" href="#collapseSec" aria-expanded="false" aria-controls="collapseSec" aria-label="Secondary">
+                  <span data-feather="plus-circle"></span>
+                </a>
+              </h6>
+              <div class="collapse" id="collapseSec">
+                <ul class="nav flex-column mb-2">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span data-feather="terminal"></span>
+                      CICD
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span data-feather="terminal"></span>
+                      Terraform
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span data-feather="github"></span>
+                      Github
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span data-feather="gitlab"></span>
+                      Gitlab
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/react1">
-                <span data-feather="shopping-cart"></span>
-                Backend
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="users"></span>
-                DevOps
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="bar-chart-2"></span>
-                Cloud
-              </a>
+            <li>
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Cloud</span>
+                <a class="link-secondary" data-bs-toggle="collapse" href="#collapseCloud" aria-expanded="false" aria-controls="collapseCloud" aria-label="Cloud">
+                  <span data-feather="plus-circle"></span>
+                </a>
+              </h6>
+              <div class="collapse" id="collapseCloud">
+                <ul class="nav flex-column mb-2">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span data-feather="cloud"></span>
+                      AWS
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span data-feather="cloud"></span>
+                      Azure
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span data-feather="cloud"></span>
+                      GCP
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
-  
-          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-            <span>Saved reports</span>
-            <a class="link-secondary" href="#" aria-label="Add a new report">
-              <span data-feather="plus-circle"></span>
-            </a>
-          </h6>
-          <ul class="nav flex-column mb-2">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Current month
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Last quarter
-              </a>
-            </li>
-          </ul>
+
         </div>
     </nav>
 </aside>

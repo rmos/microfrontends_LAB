@@ -15,17 +15,6 @@ export class LookupService {
                 displayName: 'Ng1',
                 routePath: 'approuteng1',
                 ngModuleName: 'PageoneModule'
-            },
-            {
-                // For Loading
-                type: 'module',
-                remoteEntry: 'http://localhost:5003/remoteEntry.js',
-                exposedModule: './web-components',
-
-                // For Routing
-                displayName: 'React',
-                routePath: 'mfer',
-                ngModuleName: 'WrapperModule'
             }
         ] as Microfrontend[]);
     }

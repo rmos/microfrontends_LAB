@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { ReactComponent } from './components/react/react.component';
 import { ConfigComponent } from './config/config.component';
-import { WrapperComponent } from './wrapper.component';
 import { WebComponentWrapper, WebComponentWrapperOptions } from '@angular-architects/module-federation-tools';
+import { NotfoundComponent } from './components/notfound/notfound.component';
 
 
 export const APP_ROUTES: Routes = [
@@ -15,10 +15,10 @@ export const APP_ROUTES: Routes = [
     path: 'config',
     component: ConfigComponent
   },
-  /*{
-    path: 'mfer',
-    component: WrapperComponent
-  }*/
+  {
+    path: '',
+    component: NotfoundComponent
+  },
   {
     path: 'react1',
     component: WebComponentWrapper,
