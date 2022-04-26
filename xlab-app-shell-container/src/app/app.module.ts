@@ -9,10 +9,12 @@ import { AsideComponent } from './layout/aside/aside.component';
 import { ReactComponent } from './components/react/react.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { ConfigComponent } from './config/config.component';
-//import { WrapperComponent } from './wrapper.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { NgChartsModule } from 'ng2-charts';
 @NgModule({
   imports: [
     BrowserModule,
+    NgChartsModule,
     RouterModule.forRoot(APP_ROUTES)
   ],
   declarations: [
@@ -22,7 +24,8 @@ import { ConfigComponent } from './config/config.component';
     AsideComponent,
     ReactComponent,
     NotfoundComponent,
-    ConfigComponent
+    ConfigComponent,
+    DashboardComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
