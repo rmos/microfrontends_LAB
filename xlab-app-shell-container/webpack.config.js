@@ -20,11 +20,14 @@ module.exports = {
       ...sharedMappings.getAliases(),
     }
   },
+  experiments: {
+    outputModule: true
+  },
   plugins: [
     new ModuleFederationPlugin({
 
         remotes: {
-            //"appOne": "appOne@http://localhost:4202/remoteEntry.js",
+            "appOne": "http://localhost:5001/remoteEntry.js",
             //"mfer": "mfer@http://localhost:5003/remoteEntry.js"
         },
 

@@ -8,7 +8,8 @@ export class LookupService {
             {
                 // For Loading
                 type: 'module',
-                remoteEntry: 'http://localhost:5001/remoteEntry.js',
+                //remoteEntry: 'http://localhost:5001/remoteEntry.js',
+                remoteEntry: 'http://xlab-mfe-ng1.s3-website-us-east-1.amazonaws.com/remoteEntry.js',
                 exposedModule: './moduleappone',
 
                 // For Routing
@@ -19,7 +20,8 @@ export class LookupService {
             {
                 // For Loading
                 type: 'module',
-                remoteEntry: 'http://localhost:5002/remoteEntry.js',
+                //remoteEntry: 'http://localhost:5002/remoteEntry.js',
+                remoteEntry: 'http://xlab-mfe-ng2.s3-website-us-east-1.amazonaws.com/remoteEntry.js',
                 exposedModule: './moduleapptwo',
 
                 // For Routing

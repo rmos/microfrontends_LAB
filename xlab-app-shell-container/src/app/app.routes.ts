@@ -29,7 +29,8 @@ export const APP_ROUTES: Routes = [
     component: WebComponentWrapper,
     data: {
       //type: 'module',
-      remoteEntry: 'http://localhost:5003/remoteEntry.js',
+      //remoteEntry: 'http://localhost:5003/remoteEntry.js',
+      remoteEntry: 'http://xlab-mfe-react.s3-website-us-east-1.amazonaws.com/remoteEntry.js',
       remoteName: 'mfer',
       exposedModule: './web-components',
       elementName: 'mfer-wc'

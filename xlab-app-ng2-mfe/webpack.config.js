@@ -11,7 +11,7 @@ sharedMappings.register(
 module.exports = {
   output: {
     uniqueName: "mfeTwo",
-    publicPath: "auto"
+    publicPath: ""
   },
   optimization: {
     runtimeChunk: false
@@ -48,6 +48,14 @@ module.exports = {
       })
         
     }),
-    sharedMappings.getPlugin()
+    sharedMappings.getPlugin(),
   ],
+  devServer: {
+    port: 5002,
+    headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization",
+      },
+  }
 };

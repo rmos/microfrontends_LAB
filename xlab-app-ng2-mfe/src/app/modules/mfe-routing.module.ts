@@ -3,18 +3,22 @@ import { RouterModule, Routes } from '@angular/router';
 import { MfeComponent } from '../components/mfe.component';
 
 const routes: Routes = [
-  /*{path: '', component: MfeComponent},*/
   {
-    path:'', 
+    path: '**',
+    redirectTo: '/login',
+    pathMatch: 'full'
+  },
+  {
+    path: 'login', 
     component: MfeComponent,
     children: [
       {
-        path: "",
-        redirectTo: "login",
-        pathMatch: "full"
+        path: '',
+        redirectTo: 'auth',
+        pathMatch: 'full'
       },
       {
-        path: 'login',
+        path: 'auth',
         loadChildren: () => import('src/app/components/login/login.module').then(m => m.LoginModule),
         //canActivate: [AuthGuard]
       }

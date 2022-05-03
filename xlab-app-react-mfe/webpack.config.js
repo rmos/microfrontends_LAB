@@ -7,7 +7,7 @@ module.exports = options => {
     entry: './src/index.js',
     output: {
       //path: __dirname + '/public',
-      filename: 'bundle.js',
+      filename: 'main.js',
       publicPath: "http://localhost:5003/",
       //publicPath: "auto",
       uniqueName: "mfer-wc"
